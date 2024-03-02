@@ -5,7 +5,7 @@
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
+# /[Bb]uild/  <- This line is commonly used to ignore build outputs, including .exe files
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
@@ -55,11 +55,14 @@ ExportedObj/
 # Unity3D generated file on crash reports
 sysinfo.txt
 
-# Builds
+# Builds (other build outputs can be ignored as needed, but not .exe)
 *.apk
 *.aab
 *.unitypackage
 *.app
+
+# To ensure .exe files are included, explicitly ignore them here
+# !/**/*.exe
 
 # Crashlytics generated file
 crashlytics-build.properties
